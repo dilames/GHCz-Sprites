@@ -15,20 +15,41 @@ class SKCell: SKSpriteNode {
         case tomato
     }
     
-    init(type: cellType, state: Bool) {
-        let texture: SKTexture!
-        
-        switch (type, state) {
-        case (.mushroom, true): texture = SKTexture(imageNamed: F.Image.Mushroom.selected)
-        case (.mushroom, false): texture = SKTexture(imageNamed: F.Image.Mushroom.nonSelected)
-        case (.tomato, true): texture = SKTexture(imageNamed: F.Image.Tomato.selected)
-        case (.tomato, false): texture = SKTexture(imageNamed: F.Image.Tomato.nonSelected)
+    static var example : SKCell = { return SKCell(type: cellType.mushroom, state: true) }()
+    
+    open var type: cellType {
+        didSet {
+            guard oldValue != type else { Debuger.dprint(object: "SKCell - Cell state same as previous."); return }
+            self.texture = SKCell.initializeCellTexture(with: self.type, in: self.isSelected)
         }
+    }
+    open var isSelected: Bool {
+        didSet {
+            guard oldValue != isSelected else { Debuger.dprint(object: "SKCell - Cell state same as previous."); return }
+            self.texture = SKCell.initializeCellTexture(with: self.type, in: self.isSelected)
+        }
+    }
+    
+    init(type: cellType, state: Bool) {
+        self.type = type
+        self.isSelected = state
+        
+        let texture = SKCell.initializeCellTexture(with: type, in: state)
         
         super.init(texture: texture, color: .clear, size: texture.size())
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
     }
+    
+    static private func initializeCellTexture(with type: cellType, in state: Bool) -> SKTexture {
+        switch (type, state) {
+        case (.mushroom, true): return SKTexture(imageNamed: F.Image.Mushroom.selected)
+        case (.mushroom, false): return SKTexture(imageNamed: F.Image.Mushroom.nonSelected)
+        case (.tomato, true): return SKTexture(imageNamed: F.Image.Tomato.selected)
+        case (.tomato, false): return SKTexture(imageNamed: F.Image.Tomato.nonSelected)
+        }
+    }
+    
 }

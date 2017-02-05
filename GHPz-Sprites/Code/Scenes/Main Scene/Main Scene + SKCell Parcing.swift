@@ -8,29 +8,36 @@
 
 import Foundation
 
+fileprivate let heightMarginOffset : CGFloat = 5.0
+fileprivate let standartOffset     : CGFloat = 5.0
+
 extension MainScene {
+    
     func locateSKCells() {
         
-        let spriteCellExample = SKCell(type: .mushroom, state: true)
+        var location = CGPoint(x: 0, y: self.size.height - SKCell.example.size.height - heightMarginOffset)
         
-        var pieceLocation = CGPoint(x: 0, y: self.frame.height - spriteCellExample.size.height - 20)
-        for pieces in DataProvider.default.rawElementsArray {
-            var pieceSprite: SKCell?
-            for piece in pieces.characters {
-                switch piece {
-                case "T": pieceSprite = SKCell(type: .tomato, state: false)
-                case "M": pieceSprite = SKCell(type: .mushroom, state: false)
-                default: print("Unresolved piece")
-                }
+        for rawPieces in DataProvider.default.rawElementsArray {
+            
+            var piece: SKCell?
+            var rowFromPieces = [SKCell]()
+            
+            for rawPiece in rawPieces.characters {
                 
-                guard let pieceSprite = pieceSprite else { return }
-                pieceSprite.anchorPoint = .zero
-                pieceSprite.position = pieceLocation
-                pieceLocation.x += spriteCellExample.size.width + 10
-                self.addChild(pieceSprite)
+                if rawPiece == "T" { piece = SKCell(type: .tomato, state: false) }
+                else { piece = SKCell(type: .mushroom, state: false) }
+                
+                guard let piece = piece else { Debuger.dprint(object: "Piece can not be unwrapped"); return }
+                
+                piece.anchorPoint = .zero
+                piece.position = location
+                location.x += SKCell.example.size.width + standartOffset
+                rowFromPieces.append(piece)
+                addChild(piece)
             }
-            pieceLocation.y -= spriteCellExample.size.height + 10
-            pieceLocation.x = 0
+            location.y -= SKCell.example.size.height + standartOffset
+            location.x = 0
+            pizza.append(rowFromPieces)
         }
     }
 }

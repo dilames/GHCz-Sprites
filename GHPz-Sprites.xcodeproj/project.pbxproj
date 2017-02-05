@@ -21,6 +21,8 @@
 		62D8881A1E46B79800F6B269 /* SKCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D888191E46B79800F6B269 /* SKCell.swift */; };
 		62D8881C1E46BDBF00F6B269 /* Main Scene + SKCell Parcing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8881B1E46BDBF00F6B269 /* Main Scene + SKCell Parcing.swift */; };
 		62D8881E1E46C44C00F6B269 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8881D1E46C44C00F6B269 /* MainWindowController.swift */; };
+		62D888201E46CFF700F6B269 /* MainScene + Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8881F1E46CFF700F6B269 /* MainScene + Controls.swift */; };
+		62D888221E46D05C00F6B269 /* MainScene + Collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D888211E46D05C00F6B269 /* MainScene + Collisions.swift */; };
 		B6D8510C5B301364C2AE1E24 /* Pods_GHPz_Sprites.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6077ED8210B220518A2268FC /* Pods_GHPz_Sprites.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		62D888191E46B79800F6B269 /* SKCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCell.swift; sourceTree = "<group>"; };
 		62D8881B1E46BDBF00F6B269 /* Main Scene + SKCell Parcing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Main Scene + SKCell Parcing.swift"; sourceTree = "<group>"; };
 		62D8881D1E46C44C00F6B269 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		62D8881F1E46CFF700F6B269 /* MainScene + Controls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainScene + Controls.swift"; sourceTree = "<group>"; };
+		62D888211E46D05C00F6B269 /* MainScene + Collisions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainScene + Collisions.swift"; sourceTree = "<group>"; };
 		E0B7B01A2C4A9887E3118889 /* Pods-GHPz-Sprites.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHPz-Sprites.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GHPz-Sprites/Pods-GHPz-Sprites.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +146,8 @@
 			children = (
 				62D887FB1E469F4A00F6B269 /* MainScene.swift */,
 				62D8881B1E46BDBF00F6B269 /* Main Scene + SKCell Parcing.swift */,
+				62D8881F1E46CFF700F6B269 /* MainScene + Controls.swift */,
+				62D888211E46D05C00F6B269 /* MainScene + Collisions.swift */,
 			);
 			path = "Main Scene";
 			sourceTree = "<group>";
@@ -329,7 +335,9 @@
 				62D8881A1E46B79800F6B269 /* SKCell.swift in Sources */,
 				62D888171E46B70400F6B269 /* Debuger.swift in Sources */,
 				62D887F81E469EEF00F6B269 /* MainViewController.swift in Sources */,
+				62D888221E46D05C00F6B269 /* MainScene + Collisions.swift in Sources */,
 				62D8881E1E46C44C00F6B269 /* MainWindowController.swift in Sources */,
+				62D888201E46CFF700F6B269 /* MainScene + Controls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

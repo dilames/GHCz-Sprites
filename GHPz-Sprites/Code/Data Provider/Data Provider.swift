@@ -9,7 +9,7 @@
 import Foundation
 
 class DataProvider {
-    static let `default` = DataProvider(file: F.Path.smallInputData)
+    static let `default` = DataProvider(file: F.Path.mediumInputData)
     
     private(set) var row:    Int = 0
     private(set) var column: Int = 0
