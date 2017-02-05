@@ -8,6 +8,10 @@
 
 import Foundation
 
-class Files {
-    
+class F {
+    class Path {
+        static let bigInputData = Bundle.main.path(forResource: "big", ofType: "in")!
+        static let mediumInputData = Bundle.main.path(forResource: "medium", ofType: "in")!
+        static let smallInputData = Bundle.main.path(forResource: "small", ofType: "in")!
+    }
 }

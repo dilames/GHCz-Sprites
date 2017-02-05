@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class Debuger {
+    static let `default` = Debuger()
+    
+    static var isEnabled: Bool = true
+    
+    class func print(object: Any?) {
+        guard isEnabled == true else { return }
+        print(object: object)
+    }
+    
+}
