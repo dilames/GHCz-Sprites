@@ -1,0 +1,6 @@
+framework module Pods_GHPz_Sprites {
+  umbrella header "Pods-GHPz-Sprites-umbrella.h"
+
+  export *
+  module * { export * }
+}
