@@ -14,10 +14,10 @@
 		62D887FC1E469F4A00F6B269 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D887FB1E469F4A00F6B269 /* MainScene.swift */; };
 		62D888051E46A33600F6B269 /* File Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D888041E46A33600F6B269 /* File Structs.swift */; };
 		62D8880D1E46A94400F6B269 /* Data Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8880C1E46A94400F6B269 /* Data Provider.swift */; };
-		62D8880F1E46AD7700F6B269 /* Debuger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8880E1E46AD7700F6B269 /* Debuger.swift */; };
 		62D888131E46B69800F6B269 /* big.in in Resources */ = {isa = PBXBuildFile; fileRef = 62D888101E46B69800F6B269 /* big.in */; };
 		62D888141E46B69800F6B269 /* medium.in in Resources */ = {isa = PBXBuildFile; fileRef = 62D888111E46B69800F6B269 /* medium.in */; };
 		62D888151E46B69800F6B269 /* small.in in Resources */ = {isa = PBXBuildFile; fileRef = 62D888121E46B69800F6B269 /* small.in */; };
+		62D888171E46B70400F6B269 /* Debuger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D888161E46B70400F6B269 /* Debuger.swift */; };
 		B6D8510C5B301364C2AE1E24 /* Pods_GHPz_Sprites.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6077ED8210B220518A2268FC /* Pods_GHPz_Sprites.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,10 +33,10 @@
 		62D887FB1E469F4A00F6B269 /* MainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
 		62D888041E46A33600F6B269 /* File Structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "File Structs.swift"; sourceTree = "<group>"; };
 		62D8880C1E46A94400F6B269 /* Data Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data Provider.swift"; sourceTree = "<group>"; };
-		62D8880E1E46AD7700F6B269 /* Debuger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debuger.swift; sourceTree = "<group>"; };
 		62D888101E46B69800F6B269 /* big.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = big.in; path = "GHPz-Sprites/Resources/big.in"; sourceTree = SOURCE_ROOT; };
 		62D888111E46B69800F6B269 /* medium.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = medium.in; path = "GHPz-Sprites/Resources/medium.in"; sourceTree = SOURCE_ROOT; };
 		62D888121E46B69800F6B269 /* small.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = small.in; path = "GHPz-Sprites/Resources/small.in"; sourceTree = SOURCE_ROOT; };
+		62D888161E46B70400F6B269 /* Debuger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debuger.swift; sourceTree = "<group>"; };
 		E0B7B01A2C4A9887E3118889 /* Pods-GHPz-Sprites.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHPz-Sprites.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GHPz-Sprites/Pods-GHPz-Sprites.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +87,6 @@
 				62D8880A1E46A8EE00F6B269 /* Sprites */,
 				62D887EE1E469E4300F6B269 /* Main */,
 				62D887F91E469F1200F6B269 /* Scenes */,
-				62D8880E1E46AD7700F6B269 /* Debuger.swift */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -96,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				62D887EF1E469E8C00F6B269 /* AppDelegate.swift */,
+				62D888161E46B70400F6B269 /* Debuger.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -308,7 +308,7 @@
 				62D888051E46A33600F6B269 /* File Structs.swift in Sources */,
 				62D8880D1E46A94400F6B269 /* Data Provider.swift in Sources */,
 				62D887F01E469E8C00F6B269 /* AppDelegate.swift in Sources */,
-				62D8880F1E46AD7700F6B269 /* Debuger.swift in Sources */,
+				62D888171E46B70400F6B269 /* Debuger.swift in Sources */,
 				62D887F81E469EEF00F6B269 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
