@@ -15,10 +15,12 @@ class MainViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let viewSize = CGSize(width: 1920, height: 1080)
         if let view = self.skView {
-            let scene = MainScene(size: CGSize(width: view.frame.width, height: view.frame.height))
-            scene.scaleMode = .aspectFill
+            let scene = MainScene(size: viewSize)
+            scene.scaleMode = .aspectFit
             view.presentScene(scene)
+            view.frame = NSRect(origin: .zero, size: viewSize)
             
             view.ignoresSiblingOrder = true
             view.showsFPS = true

@@ -11,11 +11,11 @@ import Foundation
 class Debuger {
     static let `default` = Debuger()
     
-    static var isEnabled: Bool = true
+    var isEnabled: Bool { return true }
     
-    class func print(object: Any?) {
-        guard isEnabled == true else { return }
-        print(object: object)
+    class func dprint(object: Any) {
+        guard self.default.isEnabled == true else { return }
+        print(object)
     }
     
 }

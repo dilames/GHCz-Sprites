@@ -6,7 +6,6 @@
 //  Copyright © 2017 com. All rights reserved.
 //
 
-
 import Cocoa
 
 @NSApplicationMain

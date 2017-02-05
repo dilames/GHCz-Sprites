@@ -18,6 +18,9 @@
 		62D888141E46B69800F6B269 /* medium.in in Resources */ = {isa = PBXBuildFile; fileRef = 62D888111E46B69800F6B269 /* medium.in */; };
 		62D888151E46B69800F6B269 /* small.in in Resources */ = {isa = PBXBuildFile; fileRef = 62D888121E46B69800F6B269 /* small.in */; };
 		62D888171E46B70400F6B269 /* Debuger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D888161E46B70400F6B269 /* Debuger.swift */; };
+		62D8881A1E46B79800F6B269 /* SKCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D888191E46B79800F6B269 /* SKCell.swift */; };
+		62D8881C1E46BDBF00F6B269 /* Main Scene + SKCell Parcing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8881B1E46BDBF00F6B269 /* Main Scene + SKCell Parcing.swift */; };
+		62D8881E1E46C44C00F6B269 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8881D1E46C44C00F6B269 /* MainWindowController.swift */; };
 		B6D8510C5B301364C2AE1E24 /* Pods_GHPz_Sprites.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6077ED8210B220518A2268FC /* Pods_GHPz_Sprites.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		62D888111E46B69800F6B269 /* medium.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = medium.in; path = "GHPz-Sprites/Resources/medium.in"; sourceTree = SOURCE_ROOT; };
 		62D888121E46B69800F6B269 /* small.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = small.in; path = "GHPz-Sprites/Resources/small.in"; sourceTree = SOURCE_ROOT; };
 		62D888161E46B70400F6B269 /* Debuger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debuger.swift; sourceTree = "<group>"; };
+		62D888191E46B79800F6B269 /* SKCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCell.swift; sourceTree = "<group>"; };
+		62D8881B1E46BDBF00F6B269 /* Main Scene + SKCell Parcing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Main Scene + SKCell Parcing.swift"; sourceTree = "<group>"; };
+		62D8881D1E46C44C00F6B269 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		E0B7B01A2C4A9887E3118889 /* Pods-GHPz-Sprites.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHPz-Sprites.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GHPz-Sprites/Pods-GHPz-Sprites.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,9 +89,9 @@
 		62D887EB1E469DDA00F6B269 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				62D887EE1E469E4300F6B269 /* Main */,
 				62D8880B1E46A93B00F6B269 /* Data Provider */,
 				62D8880A1E46A8EE00F6B269 /* Sprites */,
-				62D887EE1E469E4300F6B269 /* Main */,
 				62D887F91E469F1200F6B269 /* Scenes */,
 			);
 			path = Code;
@@ -118,6 +124,7 @@
 			children = (
 				62D887F51E469EC400F6B269 /* Main.storyboard */,
 				62D887F71E469EEF00F6B269 /* MainViewController.swift */,
+				62D8881D1E46C44C00F6B269 /* MainWindowController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -134,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				62D887FB1E469F4A00F6B269 /* MainScene.swift */,
+				62D8881B1E46BDBF00F6B269 /* Main Scene + SKCell Parcing.swift */,
 			);
 			path = "Main Scene";
 			sourceTree = "<group>";
@@ -149,6 +157,7 @@
 		62D8880A1E46A8EE00F6B269 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				62D888181E46B77E00F6B269 /* SKCell */,
 			);
 			path = Sprites;
 			sourceTree = "<group>";
@@ -159,6 +168,14 @@
 				62D8880C1E46A94400F6B269 /* Data Provider.swift */,
 			);
 			path = "Data Provider";
+			sourceTree = "<group>";
+		};
+		62D888181E46B77E00F6B269 /* SKCell */ = {
+			isa = PBXGroup;
+			children = (
+				62D888191E46B79800F6B269 /* SKCell.swift */,
+			);
+			path = SKCell;
 			sourceTree = "<group>";
 		};
 		6B8C27EA80F5B4DB62C878B8 /* Pods */ = {
@@ -305,11 +322,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				62D887FC1E469F4A00F6B269 /* MainScene.swift in Sources */,
+				62D8881C1E46BDBF00F6B269 /* Main Scene + SKCell Parcing.swift in Sources */,
 				62D888051E46A33600F6B269 /* File Structs.swift in Sources */,
 				62D8880D1E46A94400F6B269 /* Data Provider.swift in Sources */,
 				62D887F01E469E8C00F6B269 /* AppDelegate.swift in Sources */,
+				62D8881A1E46B79800F6B269 /* SKCell.swift in Sources */,
 				62D888171E46B70400F6B269 /* Debuger.swift in Sources */,
 				62D887F81E469EEF00F6B269 /* MainViewController.swift in Sources */,
+				62D8881E1E46C44C00F6B269 /* MainWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

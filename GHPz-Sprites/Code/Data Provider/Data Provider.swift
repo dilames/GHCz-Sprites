@@ -16,7 +16,7 @@ class DataProvider {
     private(set) var min:    Int = 0
     private(set) var max:    Int = 0
     
-    private(set) var parcedArray = [String]()
+    private(set) var rawElementsArray = [String]()
     
     required init(file: String) {
         self.parce(from: file)
@@ -27,19 +27,19 @@ class DataProvider {
             let str = try String(contentsOfFile: file)
             _ = str.components(separatedBy: " ").map {
                 guard $0.components(separatedBy: "\n").count == 1 else {
-                    _ = $0.components(separatedBy: "\n").map { parcedArray.append($0) }
+                    _ = $0.components(separatedBy: "\n").map { rawElementsArray.append($0) }
                     return
                 }
-                parcedArray.append($0)
+                rawElementsArray.append($0)
             }
-            self.row = Int(parcedArray.removeFirst())!
-            self.column = Int(parcedArray.removeFirst())!
-            self.min = Int(parcedArray.removeFirst())!
-            self.max = Int(parcedArray.removeFirst())!
-            parcedArray.removeLast()
+            self.row = Int(rawElementsArray.removeFirst())!
+            self.column = Int(rawElementsArray.removeFirst())!
+            self.min = Int(rawElementsArray.removeFirst())!
+            self.max = Int(rawElementsArray.removeFirst())!
+            rawElementsArray.removeLast()
         }
         catch {
-            Debuger.print(object: "Error while reading object: \(file)")
+            Debuger.dprint(object: "Error while reading object: \(file)")
         }
     }
 }

@@ -28,30 +28,13 @@ class MainScene: SKScene {
     }
     
     override func didMove(to view: SKView) {
-//        let sprite = SKCell(selected: false, type: .tomato)
-//        var pieceLocation = CGPoint(x: 0, y: self.size.height - sprite.size.height - 20)
-//        for pieces in DataPracer.default.array {
-//            var pieceSprite: SKCell?
-//            for piece in pieces.characters {
-//                switch piece {
-//                case "T": pieceSprite = SKCell(selected: false, type: .tomato)
-//                case "M": pieceSprite = SKCell(selected: false, type: .mushroom)
-//                default: print("Unresolved piece")
-//                }
-//                
-//                guard let pieceSprite = pieceSprite else { return }
-//                pieceSprite.anchorPoint = .zero
-//                pieceSprite.position = pieceLocation
-//                pieceLocation.x += sprite.size.width + 10
-//                self.addChild(pieceSprite)
-//            }
-//            pieceLocation.y -= sprite.size.height + 10
-//            pieceLocation.x = 0
-//        }
-        let camera = SKCameraNode()
-        camera.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
-        self.addChild(camera)
-        self.camera = camera
+        self.locateSKCells()
+    }
+    
+    override func mouseDown(with event: NSEvent) {
+        let pos = event.location(in: self)
+        print(pos)
+        self.setScale(0.5)
     }
     
     override func keyDown(with event: NSEvent) {
