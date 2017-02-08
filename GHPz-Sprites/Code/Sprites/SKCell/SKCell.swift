@@ -30,6 +30,15 @@ class SKCell: SKSpriteNode {
         }
     }
     
+    open func setState(state: Bool, centeringMode centering: Bool) {
+        guard let scene = self.scene as? MainScene else { Debuger.dprint(object: "SKCell: isSelected - Unable to unwrap scene"); return }
+        guard let camera = scene.camera as? SKCamera else { Debuger.dprint(object: "SKCell: IsSelected - Unable to unwrap camera"); return }
+        self.isSelected = state
+        guard centering == true else { return }
+        camera.position = self.position
+        camera.setScale(0.09)
+    }
+    
     init(type: cellType, state: Bool) {
         self.type = type
         self.isSelected = state

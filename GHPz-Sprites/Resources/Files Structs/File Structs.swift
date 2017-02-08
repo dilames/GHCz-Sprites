@@ -14,10 +14,11 @@ struct F {
         static let bigInputData = Bundle.main.path(forResource: "big", ofType: "in")!
         static let mediumInputData = Bundle.main.path(forResource: "medium", ofType: "in")!
         static let smallInputData = Bundle.main.path(forResource: "small", ofType: "in")!
+//        static let AlgoExample = Bundle.main.path(forResource: "AlgoExample", ofType: "out")!
+        static let AlgoExample = "/Users/Dilames/Desktop/GHPz-Sprites/GHPz-Sprites/Resources/AlgoExample.out"
     }
     
     struct Image {
-        
         struct Mushroom {
             static let selected = "Selected Mushroom"
             static let nonSelected = "Nonselected Mushroom"

@@ -12,20 +12,28 @@ import SpriteKit
 class MainViewController: NSViewController {
     @IBOutlet var skView: SKView!
     
+    fileprivate let scene = MainScene(size: CGSize(width: SKCell.example.frame.size.width * CGFloat(DataProvider.default.column + 5),
+                                                   height: SKCell.example.frame.size.height * CGFloat(DataProvider.default.row + 5)))
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let viewSize = CGSize(width: SKCell.example.frame.size.width * CGFloat(DataProvider.default.column + 5),
-                              height: SKCell.example.frame.size.height * CGFloat(DataProvider.default.row + 5))
         if let view = self.skView {
-            let scene = MainScene(size: viewSize)
-            scene.scaleMode = .aspectFit
+            
+            self.scene.scaleMode = .aspectFit
             view.presentScene(scene)
             
             view.ignoresSiblingOrder = true
             view.showsFPS = true
             view.showsNodeCount = true
+            
         }
     }
+    
+    
+    override func scrollWheel(with event: NSEvent) {
+        scene.scrollWheel(with: event)
+    }
+    
+    
 }
 

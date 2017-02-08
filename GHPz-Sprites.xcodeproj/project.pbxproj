@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		622A179B1E4B827A003CC0E6 /* SKCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622A179A1E4B827A003CC0E6 /* SKCamera.swift */; };
+		622A179D1E4BA6AF003CC0E6 /* AlgoExample.out in Resources */ = {isa = PBXBuildFile; fileRef = 622A179C1E4BA6AF003CC0E6 /* AlgoExample.out */; };
+		622A179F1E4BB8F2003CC0E6 /* Main Scene + Piece Filling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622A179E1E4BB8F2003CC0E6 /* Main Scene + Piece Filling.swift */; };
 		62D887F01E469E8C00F6B269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D887EF1E469E8C00F6B269 /* AppDelegate.swift */; };
 		62D887F41E469EB300F6B269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D887F31E469EB300F6B269 /* Assets.xcassets */; };
 		62D887F61E469EC400F6B269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D887F51E469EC400F6B269 /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 		15A20AD60E2DBAE6E0F1C2A2 /* Pods-GHPz-Sprites.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHPz-Sprites.release.xcconfig"; path = "Pods/Target Support Files/Pods-GHPz-Sprites/Pods-GHPz-Sprites.release.xcconfig"; sourceTree = "<group>"; };
 		6077ED8210B220518A2268FC /* Pods_GHPz_Sprites.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GHPz_Sprites.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		622A179A1E4B827A003CC0E6 /* SKCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCamera.swift; sourceTree = "<group>"; };
+		622A179C1E4BA6AF003CC0E6 /* AlgoExample.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AlgoExample.out; sourceTree = "<group>"; };
+		622A179E1E4BB8F2003CC0E6 /* Main Scene + Piece Filling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Main Scene + Piece Filling.swift"; sourceTree = "<group>"; };
 		625B15C31E464D8300C81DB5 /* GHPz-Sprites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GHPz-Sprites.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D887EF1E469E8C00F6B269 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62D887F11E469EAB00F6B269 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 				62D888101E46B69800F6B269 /* big.in */,
 				62D888111E46B69800F6B269 /* medium.in */,
 				62D888121E46B69800F6B269 /* small.in */,
+				622A179C1E4BA6AF003CC0E6 /* AlgoExample.out */,
 				62D888031E46A32700F6B269 /* Files Structs */,
 				62D887F11E469EAB00F6B269 /* Info.plist */,
 				62D887F31E469EB300F6B269 /* Assets.xcassets */,
@@ -158,6 +163,7 @@
 				62D8881B1E46BDBF00F6B269 /* Main Scene + SKCell Parcing.swift */,
 				62D8881F1E46CFF700F6B269 /* MainScene + Controls.swift */,
 				62D888211E46D05C00F6B269 /* MainScene + Collisions.swift */,
+				622A179E1E4BB8F2003CC0E6 /* Main Scene + Piece Filling.swift */,
 			);
 			path = "Main Scene";
 			sourceTree = "<group>";
@@ -279,6 +285,7 @@
 				62D887F41E469EB300F6B269 /* Assets.xcassets in Resources */,
 				62D887F61E469EC400F6B269 /* Main.storyboard in Resources */,
 				62D888141E46B69800F6B269 /* medium.in in Resources */,
+				622A179D1E4BA6AF003CC0E6 /* AlgoExample.out in Resources */,
 				62D888151E46B69800F6B269 /* small.in in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62D887FC1E469F4A00F6B269 /* MainScene.swift in Sources */,
+				622A179F1E4BB8F2003CC0E6 /* Main Scene + Piece Filling.swift in Sources */,
 				62D8881C1E46BDBF00F6B269 /* Main Scene + SKCell Parcing.swift in Sources */,
 				62D888051E46A33600F6B269 /* File Structs.swift in Sources */,
 				62D8880D1E46A94400F6B269 /* Data Provider.swift in Sources */,
