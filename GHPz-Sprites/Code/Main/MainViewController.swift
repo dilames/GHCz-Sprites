@@ -15,7 +15,8 @@ class MainViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let viewSize = CGSize(width: 2550, height: 1440)
+        let viewSize = CGSize(width: SKCell.example.frame.size.width * CGFloat(DataProvider.default.column + 5),
+                              height: SKCell.example.frame.size.height * CGFloat(DataProvider.default.row + 5))
         if let view = self.skView {
             let scene = MainScene(size: viewSize)
             scene.scaleMode = .aspectFit

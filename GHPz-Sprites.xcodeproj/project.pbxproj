@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		622A179B1E4B827A003CC0E6 /* SKCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622A179A1E4B827A003CC0E6 /* SKCamera.swift */; };
 		62D887F01E469E8C00F6B269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D887EF1E469E8C00F6B269 /* AppDelegate.swift */; };
 		62D887F41E469EB300F6B269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D887F31E469EB300F6B269 /* Assets.xcassets */; };
 		62D887F61E469EC400F6B269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D887F51E469EC400F6B269 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		15A20AD60E2DBAE6E0F1C2A2 /* Pods-GHPz-Sprites.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHPz-Sprites.release.xcconfig"; path = "Pods/Target Support Files/Pods-GHPz-Sprites/Pods-GHPz-Sprites.release.xcconfig"; sourceTree = "<group>"; };
 		6077ED8210B220518A2268FC /* Pods_GHPz_Sprites.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GHPz_Sprites.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		622A179A1E4B827A003CC0E6 /* SKCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCamera.swift; sourceTree = "<group>"; };
 		625B15C31E464D8300C81DB5 /* GHPz-Sprites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GHPz-Sprites.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D887EF1E469E8C00F6B269 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62D887F11E469EAB00F6B269 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		622A17991E4B826F003CC0E6 /* SKCamera */ = {
+			isa = PBXGroup;
+			children = (
+				622A179A1E4B827A003CC0E6 /* SKCamera.swift */,
+			);
+			path = SKCamera;
+			sourceTree = "<group>";
+		};
 		625B15BA1E464D8300C81DB5 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +173,7 @@
 		62D8880A1E46A8EE00F6B269 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				622A17991E4B826F003CC0E6 /* SKCamera */,
 				62D888181E46B77E00F6B269 /* SKCell */,
 			);
 			path = Sprites;
@@ -336,6 +347,7 @@
 				62D888171E46B70400F6B269 /* Debuger.swift in Sources */,
 				62D887F81E469EEF00F6B269 /* MainViewController.swift in Sources */,
 				62D888221E46D05C00F6B269 /* MainScene + Collisions.swift in Sources */,
+				622A179B1E4B827A003CC0E6 /* SKCamera.swift in Sources */,
 				62D8881E1E46C44C00F6B269 /* MainWindowController.swift in Sources */,
 				62D888201E46CFF700F6B269 /* MainScene + Controls.swift in Sources */,
 			);

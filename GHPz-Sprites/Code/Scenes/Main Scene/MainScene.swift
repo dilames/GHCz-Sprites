@@ -32,7 +32,9 @@ class MainScene: SKScene {
     
     override func didMove(to view: SKView) {
         self.locateSKCells()
-        
+        let camera = SKCamera(scene: self)
+        self.addChild(camera)
+        self.camera = camera
     }
     
 }

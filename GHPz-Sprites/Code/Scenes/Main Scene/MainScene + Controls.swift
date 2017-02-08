@@ -17,6 +17,7 @@ extension MainScene {
             for piece in rowFromPieces {
                 if piece.contains(event.location(in: self)) {
                     piece.isSelected = !piece.isSelected
+                    break
                 }
             }
         }
